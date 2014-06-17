@@ -55,10 +55,12 @@ void handleKey(int pin, int *button, int *last_debounce_time, unsigned char keyC
   if (button_state != *button)
   {
     int now = millis();
-    if ((now - (*last_debounce_time)) > minimum_debounce_delta) {
+    if ((now - (*last_debounce_time)) > minimum_debounce_delta)
+    {
       *last_debounce_time = now;
       *button = button_state;
-      if (button_state == 0 && bufindex<8) {
+      if (button_state == 0 && bufindex<8)
+      {
         buf[bufindex++] = keyCode;
       }
     }
