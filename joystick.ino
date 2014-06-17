@@ -89,8 +89,8 @@ void loop()
       buf[4] != old_buf[4] ||
       buf[5] != old_buf[5] ||
       buf[6] != old_buf[6] ||
-      buf[7] != old_buf[7]) {
-
+      buf[7] != old_buf[7])
+  {
         Serial.write(buf, 8);
 
         old_buf[2] = buf[2];
