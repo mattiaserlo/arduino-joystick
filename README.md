@@ -17,7 +17,7 @@ To flash the program, first flash the Arduino-usbserial-uno.hex firmware:
 5. Disconnect and reconnect the usb cable.  
 6. Now you can flash the program from the Arduino IDE. Make sure Tools -> Board and Serial Port matches your setup.  
 
-After having flashed the program, you need to flash another firmware, Arduino-keyboard-0.3.hex, that turns Arduino into a usb hid device. Download from https://github.com/coopermaa/USBKeyboard/blob/master/firmware/Arduino-keyboard-0.3.hex
+After having flashed the program, you need to flash another firmware, Arduino-keyboard-0.3.hex, that turns Arduino into a usb hid device. Download from https://github.com/coopermaa/USBKeyboard/blob/master/firmware/Arduino-keyboard-0.3.hex  
 7. Put Arduino in dfu mode again as in 1 above.  
 8. Do "sudo dfu-programmer atmega16u2 erase"  
 9. Do "sudo dfu-programmer atmega16u2 flash Arduino-keyboard-0.3.hex"  
